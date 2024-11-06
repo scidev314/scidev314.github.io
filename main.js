@@ -1,4 +1,4 @@
-var button = document.getElementById("my-button");
+var button = document.getElementById("test1");
 button.addEventListener("click", changeColor);
 
 function changeColor() {
