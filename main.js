@@ -8,5 +8,7 @@ function changeColor() {
 
 function talk() {
   window.alert("why?");
+  document.getElementById("ohio").style.color = "green";
   window.alert("I liked that blue text");
+  document.getElementById("ohio").style.color = "green";
 }
