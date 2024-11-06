@@ -1,1 +1,1 @@
-document.querySelector('#test1').innerHTML = "helllo"
+document.getElementByID("test1") = "helllo"
