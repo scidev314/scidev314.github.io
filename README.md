@@ -1,4 +1,9 @@
+<!DOCTYPE html>
+<html>
 <body>
   <p id="test1"></p>
-  <script src="main.js"></script>
+  <script>
+    
+  </script>
 </body>
+</html>
