@@ -3,6 +3,7 @@ button.addEventListener("click", changeColor);
 
 function changeColor() {
   document.getElementById("ohio").style.color = "green";
+  document.getElementById('test2').style.visibility = 'visible';
   talk();
 }
 
