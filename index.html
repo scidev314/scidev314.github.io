@@ -5,7 +5,7 @@
   <body>
     <p id="ohio">'oogabooga'</p>
     <button id="test1" onclick="changeColor();">pressitIdareyou</button>
-    <button id="test2" hidden>gay machine</button>
+    <button id="test2">gay machine</button>
     <style>
       p {
       font-family: verdana;
@@ -19,6 +19,8 @@
       }
     </style>
     <script>
+      window.onload = document.getElementById("test2").style.visibility = "hidden";
+      
       function changeColor() {
         document.getElementById("ohio").style.color = "purple";
         document.getElementById("test2").style.visibility = "visible";
