@@ -4,7 +4,7 @@
   </head>
   <body>
     <p id="ohio">'oogabooga'</p>
-    <button id="test1">pressitIdareyou</button>
+    <button id="test1" onclick="changeColor():">pressitIdareyou</button>
     <button id="test2" hidden>gay machine</button>
     <style>
       p {
@@ -18,6 +18,18 @@
       font-size: 25px;
       }
     </style>
-    <script src="main.js"></script>
+    <script>
+      function changeColor() {
+        document.getElementById("ohio").style.color = "purple";
+        document.getElementById("test2").style.visibility = "visible";
+        talk("why?");
+      }
+      
+      function talk(tag) {
+        window.alert(tag);
+        window.alert("I liked that blue text");
+        window.alert("frick you");
+      }
+    </script>
   </body>
 </html>
