@@ -19,30 +19,28 @@
       }
     </style>
     <script>
-      window.onload = document.getElementById("test2").style.visibility = "hidden";
+      window.onload = start();
       gay_colors=["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
+
+      function start() {
+        document.getElementById("test2").style.visibility = "hidden";
+        gayness=0;
+      }
       
       function changeColor() {
         document.getElementById("ohio").style.color = "purple";
         document.getElementById("test2").style.visibility = "visible";
-        //talk("why?");
+        talk("why?");
       }
 
       function gay() {
-        gayIsTrue=1
-        gayness=0
-        window.alert(gayness)
-      }
-
-      if (gayIsTrue === 1) {
-        document.getElementById("ohio").style.color = gay_colors.at(gayness);
-        gayness += 1
+        gayIsTrue=1;
+        gayness += 1;
         if (gayness === 7) {
-          gayness = 0
+          gayness = 0;
         }
+        document.getElementById("ohio").style.color = gay_colors.at(gayness);
       }
-
-      
       
       function talk(tag) {
         window.alert(tag);
