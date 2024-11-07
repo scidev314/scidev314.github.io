@@ -20,6 +20,7 @@
     </style>
     <script>
       window.onload = document.getElementById("test2").style.visibility = "hidden";
+      gay_colors=["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
       
       function changeColor() {
         document.getElementById("ohio").style.color = "purple";
@@ -28,10 +29,15 @@
       }
 
       function gay() {
-        for (var i = 0; i < 42; i++) {
-          if ((new Date().getTime() - start) > milliseconds){
-            break;
-          }
+        gayIsTrue=1
+        gayness=0
+      }
+
+      if (gayIsTrue === 1) {
+        document.getElementById("ohio").style.color = gay_colors.at(gayness);
+        gayness += 1
+        if (gayness === 7) {
+          gayness = 0
         }
       }
       
