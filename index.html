@@ -31,6 +31,17 @@
         window.alert(tag);
         window.alert("I liked that blue text");
         window.alert("frick you");
+        sleep(1000);
+        window.alert("you know what, here");
+      }
+
+      function sleep(milliseconds) {
+        var start = new Date().getTime();
+        for (var i = 0; i < 1e7; i++) {
+          if ((new Date().getTime() - start) > milliseconds){
+            break;
+          }
+        }
       }
     </script>
   </body>
