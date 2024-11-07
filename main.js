@@ -11,4 +11,5 @@ function talk() {
   document.getElementById("ohio").style.color = "green";
   window.alert("I liked that blue text");
   document.getElementById("ohio").style.color = "green";
+  window.alert("frick you");
 }
