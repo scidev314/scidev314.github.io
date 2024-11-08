@@ -6,6 +6,11 @@
     <canvas id="can">sucks to be you</canvas>
     <style>
     </style>
-    <script src="main.js"></script>
+    <script>
+      let canvas = document.getElementById("myCanvas");
+      let ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#FF0000";
+      ctx.fillRect(0, 0, 80, 80);
+    </script>
   </body>
 </html>
