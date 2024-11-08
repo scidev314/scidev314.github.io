@@ -3,67 +3,11 @@
   <head>
   </head>
   <body>
-    <p id="ohio">'oogabooga'</p>
-    <button id="test1" onclick="changeColor();">pressthisIdareyou</button>
-    <button id="test2" onclick = "gay();">gay machine</button>
+    <canvas id="can">sucks to be you</canvas>
     <style>
-      p {
-      font-family: verdana;
-      font-size: 30px;
-      color: blue;
-      }
-
-      button {
-      font-family: verdana;
-      font-size: 25px;
-      }
     </style>
     <script>
-      window.onload = start();
-      gay_colors=["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
-
-      window.alert("hello")
-      
-      function start() {
-        document.getElementById("test2").style.visibility = "hidden";
-        gayness=0;
-      }
-      
-      function changeColor() {
-        document.getElementById("ohio").style.color = "purple";
-        document.getElementById("test2").style.visibility = "visible";
-        talk("why?");
-      }
-
-      function gay() {
-        gayIsTrue=1;
-        gayness += 1;
-        if (gayness === 7) {
-          gayness = 0;
-        }
-        document.getElementById("ohio").style.color = gay_colors.at(gayness);
-        //window.alert("skibidi skoo");
-        //window.alert("skibidi skay");
-        //window.alert("I hearby pronounce you");
-        //window.alert("f**king gay");
-      }
-      
-      function talk(tag) {
-        window.alert(tag);
-        window.alert("I liked that blue text");
-        window.alert("frick you");
-        sleep(300);
-        window.alert("you know what, here");
-      }
-
-      function sleep(milliseconds) {
-        var start = new Date().getTime();
-        for (var i = 0; i < 1e7; i++) {
-          if ((new Date().getTime() - start) > milliseconds){
-            break;
-          }
-        }
-      }
+     
     </script>
   </body>
 </html>
